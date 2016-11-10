@@ -1,0 +1,1 @@
+[28-Dec-2015 15:06:59 UTC] PHP Fatal error:  Cannot use object of type WP_Error as array in /home/vaytien/public_html/vaytien.vn/wp-content/plugins/wordpress-seo/admin/ajax.php on line 81

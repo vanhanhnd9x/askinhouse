@@ -1,0 +1,151 @@
+********************************************************************************
+DUPLICATOR INSTALL-LOG
+STEP1 START @ 11:47:25
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+VERSION:	1.1.18
+PHP:		5.5.3 | SAPI: apache2handler
+SERVER:		Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.3
+DOC ROOT:	D:/xampp/htdocs/vf
+DOC ROOT 755:	true
+LOG FILE 644:	true
+BUILD NAME:	20161025_vietfuture_580f27e84563e8817161025093744
+REQUEST URL:	http://localhost/installer.php
+
+********************************************************************************
+ARCHIVE SETUP
+********************************************************************************
+NAME:	20161025_vietfuture_580f27e84563e8817161025093744_archive.zip
+SIZE:	610.96MB
+ZIP:	Enabled (ZipArchive Support)
+EXTRACTING
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 10845
+    [filename] => D:\xampp\htdocs\vf\20161025_vietfuture_580f27e84563e8817161025093744_archive.zip
+    [comment] => 
+)
+COMPLETE: true
+
+WEB SERVER CONFIGURATION FILE RESET:
+- Backup of .htaccess/web.config made to .orig
+- Reset of .htaccess/web.config files
+
+UPDATED FILES:
+- SQL FILE:  'D:/xampp/htdocs/vf/installer-data.sql'
+- WP-CONFIG: 'D:/xampp/htdocs/vf/wp-config.php'
+
+ARCHIVE RUNTIME: 126.3599 sec.
+
+
+********************************************************************************
+DATABASE-ROUTINES
+********************************************************************************
+--------------------------------------
+SERVER ENVIROMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 5.6.11 -- Build Server: 5.5.46
+TIMEOUT:	5000
+MAXPACK:	1048576
+SQLMODE:	NO_ENGINE_SUBSTITUTION
+
+WARNING: A sql_mode has been detected that may cause issues with this install.
+Please use the advanced options in Step 1 to disable the sql_mode or disable it the my.ini file
+For more details on this topic please visit: http://dev.mysql.com/doc/refman/5.7/en/sql-mode.html
+
+
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+ERRORS FOUND:	0
+DROP TABLE:	
+QUERIES RAN:	6733
+
+buiweb_commentmeta: (308)
+buiweb_comments: (105)
+buiweb_duplicator_packages: (1)
+buiweb_links: (0)
+buiweb_options: (286)
+buiweb_postmeta: (3101)
+buiweb_posts: (1065)
+buiweb_term_relationships: (1175)
+buiweb_term_taxonomy: (310)
+buiweb_termmeta: (0)
+buiweb_terms: (309)
+buiweb_usermeta: (54)
+buiweb_users: (4)
+Removed '99' cache/transient rows
+
+SECTION RUNTIME: 8.8075 sec.
+
+********************************************************************************
+STEP1 COMPLETE @ 11:49:41 - TOTAL RUNTIME: 135.1922 sec.
+********************************************************************************
+
+
+
+********************************************************************************
+DUPLICATOR INSTALL-LOG
+STEP2 START @ 11:51:17
+NOTICE: Do not post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	latin1
+CHARSET CLIENT:	 utf8 
+
+--------------------------------------
+SERIALIZER ENGINE
+[*] scan every column
+[~] scan only text columns
+[^] no searchable columns
+--------------------------------------
+buiweb_commentmeta~ (308)
+buiweb_comments~ (105)
+buiweb_duplicator_packages^ (0)
+buiweb_links^ (0)
+buiweb_options~ (186)
+buiweb_postmeta~ (3101)
+buiweb_posts~ (1065)
+buiweb_term_relationships~ (1175)
+buiweb_term_taxonomy~ (310)
+buiweb_termmeta^ (0)
+buiweb_terms~ (309)
+buiweb_usermeta~ (54)
+buiweb_users~ (4)
+--------------------------------------
+Search1:	'http://vf.edu.vn' 
+Change1:	'http://localhost:1533' 
+Search2:	'/home/vf/domains/vf.edu.vn/public_html' 
+Change2:	'D:/xampp/htdocs/vf' 
+Search3:	'http:\/\/vf.edu.vn' 
+Change3:	'http:\/\/localhost:1533' 
+Search4:	'\/home\/vf\/domains\/vf.edu.vn\/public_html' 
+Change4:	'D:\/xampp\/htdocs\/vf' 
+Search5:	'%2Fhome%2Fvf%2Fdomains%2Fvf.edu.vn%2Fpublic_html%2F' 
+Change5:	'D%3A%2Fxampp%2Fhtdocs%2Fvf%2F' 
+Search6:	'http%3A%2F%2Fvf.edu.vn' 
+Change6:	'http%3A%2F%2Flocalhost%3A1533' 
+Search7:	'\home\vf\domains\vf.edu.vn\public_html' 
+Change7:	'D:/xampp/htdocs/vf' 
+SCANNED:	Tables:13 	|	 Rows:6617 	|	 Cells:47327 
+UPDATED:	Tables:3 	|	 Rows:1186 	|	 Cells:1693 
+ERRORS:		0 
+RUNTIME:	2.211000 sec
+
+********************************************************************************
+START FINAL CLEANUP: 11:51:20
+********************************************************************************
+UPDATE `buiweb_blogs` SET domain = 'localhost' WHERE domain = 'vf.edu.vn'
+
+--------------------------------------
+NOTICES
+--------------------------------------
+No Notices Found
+
+
+WEB SERVER CONFIGURATION FILE BASIC SETUP:
+created basic .htaccess file.  If using IIS web.config this process will need to be done manually.
+********************************************************************************
+STEP 2 COMPLETE @ 11:51:20 - TOTAL RUNTIME: 2.5428 sec.
+********************************************************************************
