@@ -2,22 +2,21 @@
 /**
  * @package WordPress
  * @subpackage Theme_Compat
- * @deprecated 3.0
+ * @deprecated 3.0.0
  *
- * This file is here for Backwards compatibility with old themes and will be removed in a future version
- *
+ * This file is here for backward compatibility with old themes and will be removed in a future version.
  */
 _deprecated_file(
 	/* translators: %s: template name */
 	sprintf( __( 'Theme without %s' ), basename( __FILE__ ) ),
-	'3.0',
+	'3.0.0',
 	null,
 	/* translators: %s: template name */
 	sprintf( __( 'Please include a %s template in your theme.' ), basename( __FILE__ ) )
 );
 ?>
 	<div id="sidebar" role="complementary">
-		<ul class="">
+		<ul>
 			<?php 	/* Widgetized sidebar, if you have the plugin installed. */
 					if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>
 			<li>
@@ -86,7 +85,7 @@ _deprecated_file(
 			</li>
 		<?php endif; ?>
 		</ul>
-		<ul class="vnpro" role="navigation">
+		<ul role="navigation">
 			<?php wp_list_pages('title_li=<h2>' . __('Pages') . '</h2>' ); ?>
 
 			<li><h2><?php _e('Archives'); ?></h2>

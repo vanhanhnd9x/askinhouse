@@ -1,15 +1,19 @@
 <?php
 /**
- * The base configurations of the WordPress.
+ * The base configuration for WordPress
  *
- * This file has the following configurations: MySQL settings, Table Prefix,
- * Secret Keys, WordPress Language, and ABSPATH. You can find more information
- * by visiting {@link http://codex.wordpress.org/Editing_wp-config.php Editing
- * wp-config.php} Codex page. You can get the MySQL settings from your web host.
+ * The wp-config.php creation script uses this file during the
+ * installation. You don't have to use the web site, you can
+ * copy this file to "wp-config.php" and fill in the values.
  *
- * This file is used by the wp-config.php creation script during the
- * installation. You don't have to use the web site, you can just copy this file
- * to "wp-config.php" and fill in the values.
+ * This file contains the following configurations:
+ *
+ * * MySQL settings
+ * * Secret keys
+ * * Database table prefix
+ * * ABSPATH
+ *
+ * @link https://codex.wordpress.org/Editing_wp-config.php
  *
  * @package WordPress
  */
@@ -28,7 +32,7 @@ define('DB_PASSWORD', '');
 define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8');
+define('DB_CHARSET', 'utf8mb4');
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
@@ -42,34 +46,24 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         '!GTTWS+/{$i5L2)IDpf Ls1#.,ISTOlsA=q1#KARY1E{AE>rrTMX=b|Yjb5l1D(%');
-define('SECURE_AUTH_KEY',  '+r2U$fI8?.sF]`7n?F<L&<(Rq%h.<$Ycf8|[oU#v#C^ZNdxT8tBSyY1bWC.8I-LN');
-define('LOGGED_IN_KEY',    'Odz1g5:TKae@vTbF$cDc{@E+:k,v8^?1&UE;#h^(!yZ:Gc:$w@Kbma UN06G)5KS');
-define('NONCE_KEY',        'Qqj.wrNXsYtTYJSFsQ`AZ);/#$15g,M+#jl<kW_zjitfPZZ0b$TvOdxfoM8@76GU');
-define('AUTH_SALT',        ',cpa_$)|lLrLE_2BTtg6<-lMA9}k`9r4W9HID.9W?LNZ0Nme4|$pPacNBL]Yd^tT');
-define('SECURE_AUTH_SALT', '#x#j{</xPm9:-E[QnV[kWaq%<%(dTm~UV@+}Rw5[X4{5-/Q^)_Qres<8:TSV`0sB');
-define('LOGGED_IN_SALT',   '-E!ZZsE7?6*8N8N.+~UE8J1*n%ycl3E4+Rx-m{AL{FzNV$DqBzG vW#fNj~=}-^0');
-define('NONCE_SALT',       '-3eP&FSX)2j.oTRg9&0I*r~-[6BfwcqEb6_i{O>b*adB|j6M!ufclIc*b2kAxu#|');
+define('AUTH_KEY',         'CjODG#7RoT]ZP,-Rp(Z-J<BzT{h5Tp]o?37SnM6{|FO}MNJ#0(K ZjpVD o ;-4w');
+define('SECURE_AUTH_KEY',  '{=?e<s|r#8giH;!e~rDNX4akH9&FSSV`()A]2<M8(xV%m)U*ve71JB,Ux$YI%L:U');
+define('LOGGED_IN_KEY',    'PF&L@|Ou:tgb~VG%O4oCfa][3HC&bCTIq[blxY+Rf(Y $uF2Efy!}B>!bI|k^%P?');
+define('NONCE_KEY',        'mVu[m}Ynq(!GZyp{tiU+QD!~,r+p@snd+YP{GQVjw|tT)soA/e+v~n{,,AZSr ([');
+define('AUTH_SALT',        'H@yjVJ`VeEAlm4rK-m|K]<A*|zlyhV6Z+swPF@_6 6dq+vrR58M=bJD{Slfba9<u');
+define('SECURE_AUTH_SALT', 'N/*B5JlE=LFlZr*R3S|(7rUZT%V8}a~YUCCM-nO-&/MKmE&#j<Za|_CNR5]GZR7$');
+define('LOGGED_IN_SALT',   ')bEUJ~!_F<th%o$5Wo]eT~e~fj6kphz!&(^Ri!zBY28BSzfkIn9|Q?n9WGMmMC&L');
+define('NONCE_SALT',       'M@[lQZEeM<IgFHB2NttO>o<1VXa%U/(V!@70hY35?_%o), cKrkdoU}7n+tlm:Y`');
 
 /**#@-*/
 
 /**
  * WordPress Database Table prefix.
  *
- * You can have multiple installations in one database if you give each a unique
- * prefix. Only numbers, letters, and underscores please!
+ * You can have multiple installations in one database if you give each
+ * a unique prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'buiweb_';
-
-/**
- * WordPress Localized Language, defaults to English.
- *
- * Change this to localize WordPress. A corresponding MO file for the chosen
- * language must be installed to wp-content/languages. For example, install
- * de_DE.mo to wp-content/languages and set WPLANG to 'de_DE' to enable German
- * language support.
- */
-define('WPLANG', '');
+$table_prefix  = 'wp_';
 
 /**
  * For developers: WordPress debugging mode.
@@ -77,6 +71,11 @@ define('WPLANG', '');
  * Change this to true to enable the display of notices during development.
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
+ *
+ * For information on other constants that can be used for debugging,
+ * visit the Codex.
+ *
+ * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
 define('WP_DEBUG', false);
 
